@@ -1,0 +1,236 @@
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 86vh;
+    background-image: linear-gradient(120deg, #a731f0 0%, #d73dca 50%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003758;
+  
+  }
+  .logo, .logo img{
+    width: 150px;
+    height: 90px;
+    cursor: none;
+  }
+  .navbar ul{
+    display: flex;
+    font-size: large;
+  }
+
+  @media (max-width: 75em) {
+    .logo{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 61.25em) {
+    .logo{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 28.75em) {
+    .logo{
+        display: none;
+    }
+  }
+  @media (max-width: 18.75em) {
+    .logo{
+        display: none;
+    }
+    .navbar ul{
+        display: none;
+      }
+  }
+  .heading{
+    list-style: none;
+  }
+  .heading h2 a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+    transition: 0.5s;
+  }
+  .navbar ul li{
+    list-style: none;
+  }
+  .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+    transition: 0.5s;
+  }
+  .navbar ul li a:hover{
+    color: #37FF8B;
+  }
+.wrapper {
+    width: 400px;
+    border-radius: 7px;
+    background-color: azure;
+}
+.wrapper header{
+    color:rgb(240, 9, 148);
+    font-size: 21px;
+    font-weight: 500;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+header i{
+    cursor: pointer;
+    font-size: 0px;
+    margin-right: 8px;
+}
+.wrapper.active header i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.wrapper .input-part{
+    margin: 20px 25px 30px;
+}
+.wrapper.active .input-part{
+  display: none;
+}
+.input-part :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.input-part input{
+    text-align: center;
+    border: 2px solid aquamarine;
+    margin: 20px 0;
+}
+.input-part input:is(:focus,valid){
+    border: 2px solid aquamarine;
+}
+.input-part .info-text{
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin: 10px 0;
+    display: none;
+}
+.info-text.error{
+    color: rgb(125, 22, 22);
+    background-color: rgb(245, 161, 161);
+    margin: 10px 0;
+    display: block;
+}
+.info-text.pending{
+    color: rgb(11, 150, 43);
+    background-color: rgb(129, 236, 138);
+    margin: 10px 0;
+    display: block;
+}
+
+.input-part .separator{
+  height: 0.5px;
+  width: 100%;
+  margin:20px 0 ;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator::before{
+    content: "or";
+    color: rgb(227, 182, 182);
+    font-size: 19px;
+    padding: 0 15px;
+    background: white;
+}
+.input-part button{
+    color: white;
+    cursor: pointer;
+    background: rgb(240, 9, 148);
+}
+
+
+
+
+
+.wrapper .weather-part {
+    margin: 30px 0 0;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+}
+.wrapper.active .weather-part {
+  display: flex;
+}
+.weather-part img{
+    width: 150px;
+    height: 150px;
+}
+.weather-part .temp {
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+}
+.weather-part .temp .numb{
+    font-weight: 600;
+}
+.weather-part .temp .deg{
+    display: block;
+    font-size: 60px;
+    margin: 10px 5px 0 0;
+}
+.weather-part  .weather{
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+.weather-part  .location{
+    font-size: 21px;
+    align-items: center;
+    text-align: center;
+    margin: -5px 20px 15px 10px;
+}
+.weather-part .bottom-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid bisque;
+}
+.bottom-details .column{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px 0 ;
+}
+.column i{
+    color:aqua;
+    font-size: 40px;
+}
+.column.humidity{
+    border-left: 1px solid #bfbfbf;
+}
+.details .temp,.humidity span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.details .temp .deg{
+    margin: 0;
+    font-size: 17px;
+    pad: 0 2px 0 1px;
+}
+.details .numb , .deg{
+    font-weight: 700;
+}
+.details p{
+    font-size: 14px;
+}
+

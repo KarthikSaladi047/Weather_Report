@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+          <img  src="./images/logo.jfif" />
+        </div>
+        <div class="heading">
+          <h2><a href="#">Weather App</a></h2>
+        </div>
+    
+        <ul>
+          <li><a href="https://replit.com/@KarthikSaladi04">Contact</a></li>
+        </ul>
+    </nav>
+   <div class="main-body">
+    <div class="wrapper">
+      <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+      <section class="input-part">
+        <p class="info-text">Please enter a valid city name</p>
+        <input
+          type="text"
+          placeholder="Enter city Name"
+          spellcheck="false"
+          required
+        />
+        <button class="btn1">Get Weather Details</button>
+        <div class="separator"></div>
+        <button class="btn2">Use My Device Location</button>
+      </section>
+      <section class="weather-part">
+        <img src="./images/cloud.svg" alt="Weather Icons" />
+        <div class="temp">
+          <span class="numb">13</span>
+          <span class="deg">℃</span>
+        </div>
+        <div class="weather">Broken Clouds</div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>Kovvur,west godavari</span>
+        </div>
+        <div class="bottom-details">
+
+            <div class="column feels">
+              <i class="bx bxs-thermometer"></i>
+              <div class="details">
+                <div class="temp">
+                  <span class="numb fnum">13</span>
+                  <span class="deg">℃</span>
+                </div>
+                <p>Feels Like</p>
+              </div>
+            </div>
+            <div class="column humidity">
+              <i class="bx bxs-droplet-half"></i>
+              <div class="details">
+                <span class="numb">87%</span>
+                <p>Humidity</p>
+              </div>
+            </div>
+
+        </div>
+      </section>
+    </div>
+   </div>
+    
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
